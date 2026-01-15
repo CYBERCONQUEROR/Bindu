@@ -13,6 +13,7 @@ import LandingPage from './components/LandingPage';
 import AIInsightsPage from './components/AIInsightsPage';
 import RiverStatsPage from './components/RiverStatsPage';
 import EmergencyTipsPage from './components/EmergencyTipsPage';
+import FloodRiskMapPage from './components/FloodRiskMapPage';
 import AnimatedBackground from './components/AnimatedBackground';
 import ParticleSystem from './components/ParticleSystem';
 import RippleEffect from './components/RippleEffect';
@@ -96,6 +97,7 @@ function App() {
   if (currentPage === 'ai-insights') return <AIInsightsPage onBack={handleBackToDashboard} />;
   if (currentPage === 'river-stats') return <RiverStatsPage onBack={handleBackToDashboard} />;
   if (currentPage === 'emergency-tips') return <EmergencyTipsPage onBack={handleBackToDashboard} />;
+  if (currentPage === 'charts') return <FloodRiskMapPage onBack={handleBackToDashboard} />;
 
   return (
     <div className="min-h-screen relative overflow-hidden">
